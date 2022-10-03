@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Stack, Typography, TextField, Button, Box, Card } from "@mui/material";
+import { Grid, Stack, Typography, TextField, Button, Box} from "@mui/material";
 import InputAdornment from '@mui/material/InputAdornment';
 import { Link } from 'react-router-dom'
 import logo from './images/logo.png';
@@ -13,7 +13,7 @@ const SentACode = () => {
         <Grid container md={12}>
             <Grid items md={6}>
                 <Stack display="flex" flexDirection="row" justifyContent="space-around" sx={{marginTop:"20px"}} >
-                    <img style={{width:"100px"}} src={logo} />
+                    <img style={{width:"100px"}} src={logo} alt="" />
                     <Typography sx={{color: "rgba(42, 86, 159, 0.95)",
                      font:"Jacques Pro", Weight:"400" }}>Remember Password? <Link to="/loginpage"><b> Login</b></Link></Typography>
                 </Stack>
@@ -21,12 +21,9 @@ const SentACode = () => {
                     <h2 style={{color:"gray"}}>We Sent You A Code!</h2>
                     <Typography  sx={{color: "#6C6C6C", width:"55%"}}>Please type the code sent to your Email
                     within the next 10 minutes.</Typography> 
-                    
-
                     <TextField sx={{width:"60%", textAlign:"center", 
                 marginTop:"30px", background: "#FFFFFF", border:"0px", boxShadow:"1px 3px 3px 1px gray"}}
                     id="input-with-icon-textfield"
-                    // label="Outlined"
                     defaultValue="Type Code"
                     InputProps={{
                     startAdornment: (
@@ -50,7 +47,7 @@ const SentACode = () => {
                 {/* <Card sx={{height:"100vh"}}> */}
                 <Box sx={{marginTop:"30px"}}>
                 <Stack sx={{textAlign:"center"}}>
-                <img sx={{width:"80%"}} src={books} />
+                <img sx={{width:"80%"}} src={books} alt="" />
                 </Stack>
                 </Box>
             </Grid>

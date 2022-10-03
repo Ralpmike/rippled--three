@@ -17,7 +17,6 @@ export default function SelectSmall() {
     <FormControl sx={{ width:"60%", boxShadow:"1px 3px 3px 1px gray", border:"none", marginTop:"30px",height:"10vh",}} >
       <InputLabel id="demo-select-small">signup as</InputLabel>
       <Select
-      // defaultValue="signup as"
         labelId="demo-select-small"
         id="demo-select-small"
         InputProps={{

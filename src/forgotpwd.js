@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Stack, Typography, TextField, Button, Box, Card} from "@mui/material";
+import { Grid, Stack, Typography, TextField, Button, Box} from "@mui/material";
 import {Link} from "react-router-dom";
 import InputAdornment from '@mui/material/InputAdornment';
 import EmailIcon from '@mui/icons-material/Email';
@@ -13,7 +13,7 @@ const ForGotPwd = () => {
         <Grid container md={12}>
             <Grid items md={6}>
                 <Stack display="flex" flexDirection="row" justifyContent="space-around" sx={{marginTop:"20px"}} >
-                    <img style={{width:"100px"}} src={logo} />
+                    <img style={{width:"100px"}} src={logo} alt="" />
                     <Typography sx={{color: "rgba(42, 86, 159, 0.95)",
                      font:"Jacques Pro", Weight:"400" }}>Remember Password? <Link to="/loginpage" textDecoration="none">Login</Link></Typography>
                 </Stack>
@@ -26,7 +26,6 @@ const ForGotPwd = () => {
                     <TextField sx={{width:"60%", textAlign:"center", 
                 marginTop:"30px", background: "#FFFFFF", border:"0px", boxShadow:"1px 3px 3px 1px gray"}}
                     id="input-with-icon-textfield"
-                    // label="Outlined"
                     defaultValue="Email Address"
                     InputProps={{
                     startAdornment: (
@@ -45,10 +44,9 @@ const ForGotPwd = () => {
                 </Stack>
             </Grid>
             <Grid items md={6}>
-                {/* <Card sx={{height:"100vh"}}> */}
                 <Box sx={{marginTop:"30px"}}>
                 <Stack>
-                <img  src={books} />
+                <img  src={books} alt="" />
                 </Stack>
                 </Box>
             </Grid>

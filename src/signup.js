@@ -1,10 +1,8 @@
-import { Grid, Stack, Typography, TextField, Button, Box, Card } from "@mui/material";
+import { Grid, Stack, Typography, TextField, Button} from "@mui/material";
 import InputAdornment from '@mui/material/InputAdornment';
-import LoginIcon from '@mui/icons-material/Login';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import EmailIcon from '@mui/icons-material/Email';
 import LockPersonIcon from '@mui/icons-material/LockPerson';
-import GoogleIcon from '@mui/icons-material/Google';
 import logo from './images/logo.png';
 import girl from './images/girl.png';
 import google from './images/google.png';
@@ -20,18 +18,15 @@ const SignUpPage = () => {
         <Grid container md={12}>
             <Grid items md={6}>
                 <Stack display="flex" flexDirection="row" justifyContent="space-around" sx={{marginTop:"15px"}}>
-                <img style={{width:"100px"}} src={logo} />
+                <img style={{width:"100px"}} src={logo} alt="" />
                     <Typography sx={{color: "rgba(42, 86, 159, 0.95)",
                      font:"Jacques Pro", Weight:"400" }}>Already Have An Account? <Link to="/loginpage"><b>Login</b></Link></Typography>
                 </Stack>
                 <Stack marginLeft="100px">
                     <Typography  sx={{marginTop:"25px", color: "#6C6C6C"}}>Get Started With RipplED</Typography> 
                     <TextField sx={{width:"60%", marginTop:"30px", background: "#EEF4FF", boxShadow:"1px 3px 3px 1px gray"}}
-                    // id="input-with-icon-textfield"
-                    
                     variant="filled"
                     label="Full N|"
-                    // defaultValue="Full N|"
                     InputProps={{
                     startAdornment: (
                         <InputAdornment position="start">
@@ -40,21 +35,11 @@ const SignUpPage = () => {
                     ),
                     }}
                     />
-                    {/* <TextField
-                    sx={{width:"50%", marginTop:"30px", 
-                    background: "#EEF4FF", 
-                    boxShadow:"1px 3px 3px 1px gray"}}
-                        hiddenLabel
-                        id="filled-hidden-label-normal"
-                        defaultValue="Full N|"
-                        variant="filled"
-                    /> */}
 
                 <TextField sx={{width:"60%", textAlign:"center", 
                 marginTop:"30px", background: "#FFFFFF", border:"0px", boxShadow:"1px 3px 3px 1px gray"}}
                     id="input-with-icon-textfield"
                     label="Email Address"
-                    // defaultValue="Email Address"
                     InputProps={{
                     startAdornment: (
                         <InputAdornment position="start">
@@ -69,7 +54,6 @@ const SignUpPage = () => {
                 marginTop:"30px", boxShadow:"1px 3px 3px 1px gray"}}
                     id="input-with-icon-textfield"
                     label="Password"
-                    // defaultValue="Password"
                     InputProps={{
                     startAdornment: (
                         <InputAdornment position="start">
@@ -79,26 +63,7 @@ const SignUpPage = () => {
                     }}
                     variant="filled"
                     />
-
-                {/* <TextField sx={{width:"50%", 
-                textAlign:"center", 
-                marginTop:"30px", 
-                borderRadius:"20%"}}
-                    id="input-with-icon-textfield"
-                    // label="Outlined"
-                    defaultValue="Sign Up As"
-                    InputProps={{
-                        startAdornment: (
-                            <InputAdornment position="start">
-                        <LoginIcon />
-                        </InputAdornment>
-                    ),
-                }}
-                    variant="outlined"
-                    />  */}
                 <SelectSmall />
-
-
                     <Typography sx={{marginTop:"20px"}}> <small>
                         By continuing you indicate that you read and agreed to the Terms of Use</small>
                     </Typography>
@@ -113,7 +78,7 @@ const SignUpPage = () => {
             </Grid>
             <Grid items md={6}>
                 <Stack>
-                <img style={{width:"90%"}} src={girl} />
+                <img style={{width:"90%"}} src={girl}  alt="" />
                 </Stack>
                 
                 <Button startIcon={<BoltIcon  style={{borderRadius: "10px", backgroundColor:"gray"}} />} sx={{background:"linear-gradient(#2A569F  100%, #2A569F 100%)", borderRadius: "5px", color:"white", marginTop:"35px", marginLeft:"90px"}} >We Are Here For You</Button>

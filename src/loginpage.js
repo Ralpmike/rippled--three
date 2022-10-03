@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Stack, Typography, TextField, Button, Box, Card } from "@mui/material";
+import { Grid, Stack, Typography, TextField, Button, Box} from "@mui/material";
 import InputAdornment from '@mui/material/InputAdornment';
 import EmailIcon from '@mui/icons-material/Email';
 import LockPersonIcon from '@mui/icons-material/LockPerson';
@@ -43,7 +43,7 @@ const SignInPage = () => {
         <Grid container md={12}>
             <Grid items md={6}>
                 <Stack display="flex" flexDirection="row" justifyContent="space-around" sx={{marginTop:"10px"}} >
-                    <img style={{width:"100px"}} src={logo} />
+                    <img style={{width:"100px"}} src={logo} alt="" />
                     <Typography sx={{color: "rgba(42, 86, 159, 0.95)",
                      font:"Jacques Pro", Weight:"400" }}>Don't Have An Account? <Link to="/signup"><b>Sign Up</b></Link></Typography>
                 </Stack>
@@ -56,7 +56,6 @@ const SignInPage = () => {
                 marginTop:"30px", background: "#FFFFFF", boxShadow:"1px 3px 3px 1px gray"}}
                     id="input-with-icon-textfield"
                     label="Email Address"
-                    // defaultValue="Email Address"
                     InputProps={{
                     startAdornment: (
                         <InputAdornment position="start">
@@ -71,7 +70,6 @@ const SignInPage = () => {
 <FormControl sx={{ width: '60%', marginTop:"30px", boxShadow:"1px 3px 3px 1px gray"}} >
           <InputLabel>Password</InputLabel>
           <OutlinedInput
-          // defaultValue="Password"
             id="outlined-adornment-password"
             placeholder="password"
             variant="filled"
@@ -134,13 +132,12 @@ const SignInPage = () => {
                 </Stack>
             </Grid>
             <Grid items md={6}>
-                {/* <Card sx={{height:"100vh"}}> */}
                 <Box>
                 <Stack>
-                <img style={{width:"90%", marginTop:"20px"}} src={books} />
+                <img style={{width:"90%", marginTop:"20px"}} src={books} alt="" />
                 </Stack>
                 
-                <Button sx={{background:"linear-gradient(#2A569F  100%, #2A569F 100%)", borderRadius: "1px", color:"white", marginTop:"20px", marginLeft:"80px", borderRadius: "5px"}} > 👍  Top Notch Stock Resources</Button>
+                <Button sx={{background:"linear-gradient(#2A569F  100%, #2A569F 100%)", color:"white", marginTop:"20px", marginLeft:"80px", borderRadius: "5px"}} > 👍  Top Notch Stock Resources</Button>
                 <Typography width="50%" sx={{marginLeft:"80px", color: "#6E7A87", textAlign: "center", fontFamily: 'Poppins'}}> Today, we create innovative solutions to the challenges that consumers face in both their everyday lives and events.</Typography>
                 </Box>
                 {/* </Card> */}

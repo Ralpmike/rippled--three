@@ -2,15 +2,11 @@ import { Stack, Box, Button, Typography, Grid, Card } from "@mui/material";
 import logo from './images/logo.png';
 import boys from './images/boys.png';
 import Divider from '@mui/material/Divider';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Video from './images/Video.png';
 import reading from './images/reading.png';
 import writting from './images/writting.png';
 import round from './images/round.png';
 import group from './images/group.png';
-import shade1 from './images/shade1.png';
-import shade2 from './images/shade2.png';
-import hmmm from './images/hmmm.png';
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 import thumb from './images/thumb.png';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
@@ -57,7 +53,7 @@ const LandingPage = () => {
         </Grid>
         <Grid items md-6>
         <Box sx={{marginTop:"20px"}}>
-            <img src={boys} width={400}  />
+            <img src={boys} width={400} alt="" />
             </Box>
         </Grid>
         </Grid>
@@ -89,7 +85,7 @@ const LandingPage = () => {
 
         <Grid container md={12} width="75%" marginLeft="90px" marginTop="60px" textAlign="center">
             <Grid items md={6}>
-            <img  src={Video} width={300}  />
+            <img  src={Video} width={300} alt="" />
             </Grid>
             <Grid items md={6} width="90%">
             <h2>RipplED supports your learning
