@@ -53,7 +53,7 @@ const LandingPage = () => {
             </Box>
         </Grid>
         <Grid items md-6>
-        <Box sx={{marginTop:"20px"}}>
+        <Box sx={{marginTop:"40px"}}>
             <img src={boys} width={400} alt="" />
             </Box>
         </Grid>
