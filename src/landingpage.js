@@ -89,7 +89,7 @@ const LandingPage = () => {
             <Grid items md={6}>
             <h2 style={{fontFamily:"Jacques Pro", fontWeight:"600", fontSize:"32px", lineHeight:"44.4px", letter:"8%"}}>RipplED supports your learning
              and social impact Activities</h2>
-            <Typography  sx={{fontFamily:"Jacques Pro", fontWeight:"300", fontSize:"24px", lineHeight:"33.6px", letter:"6%"}}>Through its online platform, RipplED offer
+            <Typography  sx={{fontFamily:"Jacques Pro"}}>Through its online platform, RipplED offer
             students in Secondary Schools the opportunity
             to access skill development opportunities,
             mentorship and tailored curriculum to enable
@@ -108,13 +108,13 @@ const LandingPage = () => {
         <Grid container md={12} sx={{marginTop:"30px"}}>
             <Grid items md={3} sx={{fontFamily:"Jacques Pro", fontSize:"20px", lineHeight:"28px", color:"gray"}}>
                 <h2 style={{marginLeft:"100px"}}>All SDGS</h2>
-                <Typography sx={{marginLeft:"30px"}}>No Poverty</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"100px"}}>Zero Hunger</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"100px"}}>Good health & well-being</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"100px"}}>Quality Education</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"100px"}}>Genger Equality</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"100px"}}>Affordable & clean energy</Typography>
-                <Button sx={{background: "linear-gradient(135deg, #FFB1BD 0%, #F06277 100%)",borderRadius:"15px", marginTop:"200%", marginLeft:"100px"}}>Show all</Button>
+                <Typography sx={{marginLeft:"80px"}}>No Poverty</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"80px"}}>Zero Hunger</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"80px"}}>Good health & well-being</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"80px"}}>Quality Education</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"80px"}}>Genger Equality</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"80px"}}>Affordable & clean energy</Typography>
+                <Button sx={{background: "linear-gradient(135deg, #FFB1BD 0%, #F06277 100%)",borderRadius:"15px", marginTop:"200%", marginLeft:"80px", marginTop:{xs:"20px"}}}>Show all</Button>
             </Grid>
             {/* first card */}
             <Grid items md={3}>
