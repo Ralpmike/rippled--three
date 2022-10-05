@@ -58,7 +58,7 @@ const LandingPage = () => {
         </Grid>
         </Grid>
 
-        <Grid sx={{display:"flex", px: 15, flexDirection:"row",  justifyContent:"space-around", textAlign:"center",  height:"20vh", color:"white", marginTop:{xs:"320px", md:"0px", backgroundImage:`url(${reading})`,backgroundRepeat:"no-repeat", background: "rgba(42, 86, 159, 0.95)", height:"30vh"  }}}>
+        <Grid sx={{display:"flex", px: 15, flexDirection:"row",  justifyContent:"space-around", textAlign:"center",  height:"20vh", color:"white", marginTop:{xs:"120%", md:"0px", backgroundImage:`url(${reading})`,backgroundRepeat:"no-repeat", background: "rgba(42, 86, 159, 0.95)", height:"30vh"  }}}>
             <Grid items md={3} sx={{marginTop:"30px"}}>
                 {/* <h1></h1> */}
                 <Typography sx={{fontSize:"40px", fontFamily:"Jacques Pro"}}>200</Typography>
