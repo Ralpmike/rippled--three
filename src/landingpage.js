@@ -53,12 +53,12 @@ const LandingPage = () => {
         </Grid>
         <Grid items md-6>
         <Box sx={{marginTop:"80px"}}>
-            <img src={boys} width={300} alt="" />
+            <img src={boys} width={350} alt="" />
             </Box>
         </Grid>
         </Grid>
 
-        <Grid sx={{display:"flex", px: 15, flexDirection:"row",  justifyContent:"space-around", textAlign:"center",  height:"20vh", color:"white", marginTop:{xs:"10%", md:"0px", backgroundImage:`url(${reading})`,backgroundRepeat:"no-repeat", background: "rgba(42, 86, 159, 0.95)", height:"30vh"  }}}>
+        <Grid sx={{display:"flex", px: 15, flexDirection:"row",  justifyContent:"space-around", textAlign:"center",  height:"20vh", color:"white", marginTop:{xs:"10%", md:"0px", backgroundImage:`url(${reading})`,backgroundRepeat:"no-repeat", background: "rgba(42, 86, 159, 0.95)", height:"30vh"  }, width:"70%"}}>
             <Grid items md={3} sx={{marginTop:"30px"}}>
                 <Typography sx={{fontSize:"40px", fontFamily:"Jacques Pro"}}>200</Typography>
                 <Typography sx={{fontFamily:"Jacques Pro", fontSize:"13px"}}>Students</Typography>
@@ -107,14 +107,14 @@ const LandingPage = () => {
         </Stack>
         <Grid container md={12} sx={{marginTop:"30px"}}>
             <Grid items md={3} sx={{fontFamily:"Jacques Pro", fontSize:"20px", lineHeight:"28px", color:"gray"}}>
-                <h2 style={{marginLeft:"20px"}}>All SDGS</h2>
+                <h2 style={{marginLeft:"30px"}}>All SDGS</h2>
                 <Typography sx={{marginLeft:"30px"}}>No Poverty</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"20px"}}>Zero Hunger</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"20px"}}>Good health & well-being</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"20px"}}>Quality Education</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"20px"}}>Genger Equality</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"20px"}}>Affordable & clean energy</Typography>
-                <Button sx={{background: "linear-gradient(135deg, #FFB1BD 0%, #F06277 100%)",borderRadius:"15px", marginTop:"30%", marginLeft:"20px"}}>Show all</Button>
+                <Typography sx={{marginTop:"30px", marginLeft:"30px"}}>Zero Hunger</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"30px"}}>Good health & well-being</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"30px"}}>Quality Education</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"30px"}}>Genger Equality</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"30px"}}>Affordable & clean energy</Typography>
+                <Button sx={{background: "linear-gradient(135deg, #FFB1BD 0%, #F06277 100%)",borderRadius:"15px", marginTop:"30%", marginLeft:"30px"}}>Show all</Button>
             </Grid>
             {/* first card */}
             <Grid items md={3}>
@@ -289,9 +289,9 @@ const LandingPage = () => {
 
         <Grid container md={12} sx={{display: 'flex', flexDirection:"row", justifyContent:"space-around", marginTop:"40px", width:"90%"}}>
             <Grid items md={6}>
-            <img src={thumb} alt="" width={300} />
+            <img src={thumb} alt="" width={400} />
             </Grid>
-            <Grid items md={6} sx={{width:"70%"}}>
+            <Grid items md={6} sx={{width:"80%"}}>
             <h2>Watch Our Students
             In Action</h2>
             <Typography sx={{marginTop:"20px"}} >From acting for Quality Education, to advocating for
