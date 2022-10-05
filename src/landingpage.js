@@ -38,7 +38,7 @@ const LandingPage = () => {
         <Grid container md={12}  height="90vh" sx={{background: "linear-gradient(180deg, #FFFFFF 55.8%, #EEF4FF 92.7%, rgba(238, 244, 255, 0.5) 92.7%)", height:{xs:"100%"}
 }} >
             <Grid items md={6}>
-            <Box sx={{width:"75%", marginLeft:"60px"}}>
+            <Box sx={{width:"75%", marginLeft:"50px"}}>
             <h3 style={{color:"gray", fontSize:"40px", fontWeight:"700", lineheight:"50px", fontFamily:"Jacques Pro"}}> <b> Receive the support you need
             to create a ripple effect in
             your school and community. </b></h3>
@@ -53,7 +53,7 @@ const LandingPage = () => {
         </Grid>
         <Grid items md-6>
         <Box sx={{marginTop:"80px"}}>
-            <img src={boys} width={400} alt="" />
+            <img src={boys} width={300} alt="" />
             </Box>
         </Grid>
         </Grid>
