@@ -12,15 +12,14 @@ import thumb from './images/thumb.png';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import {Link} from "react-router-dom";
 import aboy from './images/aboy.png';
-
-
-
-
+import DrawerAppBar from './appbar';
 
 const LandingPage = () => {
     return (
         <>
-        <Stack  container  sx={{display:"flex", flexDirection:"row", justifyContent:"space-around", zIndex:"5" }} >
+            <DrawerAppBar />
+
+        {/* <Stack  container  sx={{display:"flex", flexDirection:"row", justifyContent:"space-around", zIndex:"5" }} >
             <Box marginTop={1}>
         <img sx={{marginTop:""}} src={logo} alt="" width={80} />
             </Box>
@@ -34,7 +33,7 @@ const LandingPage = () => {
         <Box>
             <Button> <Link to="/loginpage">Login</Link> </Button>
         </Box>
-        </Stack>
+        </Stack> */}
 
         <Grid container md={12}  height="90vh" sx={{background: "linear-gradient(180deg, #FFFFFF 55.8%, #EEF4FF 92.7%, rgba(238, 244, 255, 0.5) 92.7%)"
 }} >
@@ -53,7 +52,7 @@ const LandingPage = () => {
             </Box>
         </Grid>
         <Grid items md-6>
-        <Box sx={{marginTop:"40px"}}>
+        <Box sx={{marginTop:"80px"}}>
             <img src={boys} width={400} alt="" />
             </Box>
         </Grid>
@@ -269,7 +268,7 @@ const LandingPage = () => {
         <Grid container md={12} sx={{backgroundColor:"#2A569F", backgroundRepeat:"no-repeat",display: 'flex', flexDirection:"row", justifyContent:"space-around", marginTop:"20px", color:"white"}}>
             {/* <Box sx={{marginLeft:"30px"}}> */}
             <Grid items md={6}>
-                <h1 style={{width:"70%", marginTop:"40px", marginLeft:"40px" }}>You Can Become A 
+                <h1 style={{width:"65%", marginTop:"40px", marginLeft:"40px" }}>You Can Become A 
                 RipplED Sponsor Or
                 Partner</h1>
                 </Grid>
@@ -305,12 +304,12 @@ const LandingPage = () => {
         </Grid>
 
         <Box textAlign="center">
-            <h2 style={{textAlign:"center", fontFamily:"Jacques Pro", fontWeight:"600", fontSize:"32px", lineHeight:"44.8px"}}>What Our Students Say</h2>
-            <Grid container md={12}>
+            <h2 style={{textAlign:"center", fontFamily:"Jacques Pro", fontWeight:"600", fontSize:"32px"}}>What Our Students Say</h2>
+            <Grid container md={12} >
                 
                 <Grid items md={4}>
                 <Box m={2}>
-                    <Card width="30%">
+                    <Card>
                     <img src={aboy} alt="" />
                     <Typography sx={{width
                     :"50%", marginLeft:"80px"}}>An enim nullam tempori
