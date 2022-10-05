@@ -86,7 +86,7 @@ const LandingPage = () => {
             <Grid items md={6} sx={{marginTop:"30px"}}>
             <img  src={Video} width={300} height={300} alt="" />
             </Grid>
-            <Grid items md={6} width="50%">
+            <Grid items md={6} width="70%">
             <h2 style={{fontFamily:"Jacques Pro", fontWeight:"600", fontSize:"32px", lineHeight:"44.4px", letter:"8%"}}>RipplED supports your learning
              and social impact Activities</h2>
             <Typography  sx={{fontFamily:"Jacques Pro", fontWeight:"300", fontSize:"24px", lineHeight:"33.6px", letter:"6%", }}>Through its online platform, RipplED offer
@@ -267,7 +267,7 @@ const LandingPage = () => {
         <Grid container md={12} sx={{backgroundColor:"#2A569F", backgroundRepeat:"no-repeat",display: 'flex', flexDirection:"row", justifyContent:"space-around", marginTop:"20px", color:"white"}}>
             {/* <Box sx={{marginLeft:"30px"}}> */}
             <Grid items md={6}>
-                <h1 style={{width:"65%", marginTop:"40px", marginLeft:"40px" }}>You Can Become A 
+                <h1 style={{width:"75%", marginTop:"40px", marginLeft:"50px" }}>You Can Become A 
                 RipplED Sponsor Or
                 Partner</h1>
                 </Grid>
@@ -289,7 +289,7 @@ const LandingPage = () => {
 
         <Grid container md={12} sx={{display: 'flex', flexDirection:"row", justifyContent:"space-around", marginTop:"40px", width:"90%"}}>
             <Grid items md={6}>
-            <img src={thumb} alt="" width={450} />
+            <img src={thumb} alt="" width={400} />
             </Grid>
             <Grid items md={6} sx={{width:"70%"}}>
             <h2>Watch Our Students
