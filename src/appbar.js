@@ -61,7 +61,7 @@ function DrawerAppBar(props) {
           <Typography
             variant="h6"
             component="div"
-            // sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             // sx={{display:"flex", flexDirection:"row", justifyContent:"space-around"}}
           >
             MUI
