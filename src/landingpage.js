@@ -343,7 +343,9 @@ const LandingPage = () => {
                 </Grid>
             </Grid>
         </Box>
-
+                        <Box>
+                            <Typography>when Good</Typography>
+                        </Box>
 
         </>
     );
