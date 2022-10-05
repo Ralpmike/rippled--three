@@ -89,7 +89,7 @@ const LandingPage = () => {
             <Grid items md={6}>
             <h2 style={{fontFamily:"Jacques Pro", fontWeight:"600", fontSize:"32px", lineHeight:"44.4px", letter:"8%", width:"75%"}}>RipplED supports your learning
              and social impact Activities</h2>
-            <Typography  sx={{fontFamily:"Jacques Pro", fontWeight:"300", fontSize:"24px", lineHeight:"33.6px", letter:"6%", width:"50%"}}>Through its online platform, RipplED offer
+            <Typography  sx={{fontFamily:"Jacques Pro", fontWeight:"300", fontSize:"24px", lineHeight:"33.6px", letter:"6%"}}>Through its online platform, RipplED offer
             students in Secondary Schools the opportunity
             to access skill development opportunities,
             mentorship and tailored curriculum to enable
