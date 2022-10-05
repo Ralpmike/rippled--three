@@ -114,7 +114,7 @@ const LandingPage = () => {
                 <Typography sx={{marginTop:"30px", marginLeft:"80px"}}>Quality Education</Typography>
                 <Typography sx={{marginTop:"30px", marginLeft:"80px"}}>Genger Equality</Typography>
                 <Typography sx={{marginTop:"30px", marginLeft:"80px"}}>Affordable & clean energy</Typography>
-                <Button sx={{background: "linear-gradient(135deg, #FFB1BD 0%, #F06277 100%)",borderRadius:"15px", marginLeft:"80px", marginTop:{xs:"0px", md:"0px",}}}>Show all</Button>
+                <Button sx={{background: "linear-gradient(135deg, #FFB1BD 0%, #F06277 100%)",borderRadius:"15px", marginLeft:"80px"}}>Show all</Button>
             </Grid>
             {/* first card */}
             <Grid items md={3}>
