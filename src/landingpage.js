@@ -35,10 +35,10 @@ const LandingPage = () => {
         </Box>
         </Stack> */}
 
-        <Grid container md={12}  height="90vh" sx={{background: "linear-gradient(180deg, #FFFFFF 55.8%, #EEF4FF 92.7%, rgba(238, 244, 255, 0.5) 92.7%)"
+        <Grid container md={12}  height="90vh" sx={{background: "linear-gradient(180deg, #FFFFFF 55.8%, #EEF4FF 92.7%, rgba(238, 244, 255, 0.5) 92.7%)", height:{xs:"100%"}
 }} >
             <Grid items md={6}>
-            <Box sx={{marginTop:"100px", width:"75%", marginLeft:"100px"}}>
+            <Box sx={{width:"75%", marginLeft:"60px"}}>
             <h3 style={{color:"gray", fontSize:"40px", fontWeight:"700", lineheight:"50px", fontFamily:"Jacques Pro"}}> <b> Receive the support you need
             to create a ripple effect in
             your school and community. </b></h3>
@@ -60,7 +60,6 @@ const LandingPage = () => {
 
         <Grid sx={{display:"flex", px: 15, flexDirection:"row",  justifyContent:"space-around", textAlign:"center",  height:"20vh", color:"white", marginTop:{xs:"120%", md:"0px", backgroundImage:`url(${reading})`,backgroundRepeat:"no-repeat", background: "rgba(42, 86, 159, 0.95)", height:"30vh"  }}}>
             <Grid items md={3} sx={{marginTop:"30px"}}>
-                {/* <h1></h1> */}
                 <Typography sx={{fontSize:"40px", fontFamily:"Jacques Pro"}}>200</Typography>
                 <Typography sx={{fontFamily:"Jacques Pro", fontSize:"13px"}}>Students</Typography>
             </Grid>
@@ -83,11 +82,11 @@ const LandingPage = () => {
             </Grid>
         </Grid>
 
-        <Grid container md={12} width="75%" marginLeft="90px" marginTop="60px" textAlign="center">
+        <Grid container md={12} width="80%" marginLeft="20px" marginTop="60px" textAlign="center">
             <Grid items md={6} sx={{marginTop:"30px"}}>
             <img  src={Video} width={300} height={300} alt="" />
             </Grid>
-            <Grid items md={6} width="90%">
+            <Grid items md={6} width="50%">
             <h2 style={{fontFamily:"Jacques Pro", fontWeight:"600", fontSize:"32px", lineHeight:"44.4px", letter:"8%"}}>RipplED supports your learning
              and social impact Activities</h2>
             <Typography  sx={{fontFamily:"Jacques Pro", fontWeight:"300", fontSize:"24px", lineHeight:"33.6px", letter:"6%", }}>Through its online platform, RipplED offer
@@ -108,14 +107,14 @@ const LandingPage = () => {
         </Stack>
         <Grid container md={12} sx={{marginTop:"30px"}}>
             <Grid items md={3} sx={{fontFamily:"Jacques Pro", fontSize:"20px", lineHeight:"28px", color:"gray"}}>
-                <h2 style={{marginLeft:"30px"}}>All SDGS</h2>
+                <h2 style={{marginLeft:"20px"}}>All SDGS</h2>
                 <Typography sx={{marginLeft:"30px"}}>No Poverty</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"30px"}}>Zero Hunger</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"30px"}}>Good health & well-being</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"30px"}}>Quality Education</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"30px"}}>Genger Equality</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"30px"}}>Affordable & clean energy</Typography>
-                <Button sx={{background: "linear-gradient(135deg, #FFB1BD 0%, #F06277 100%)",borderRadius:"15px", marginTop:"30%", marginLeft:"30px"}}>Show all</Button>
+                <Typography sx={{marginTop:"30px", marginLeft:"20px"}}>Zero Hunger</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"20px"}}>Good health & well-being</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"20px"}}>Quality Education</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"20px"}}>Genger Equality</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"20px"}}>Affordable & clean energy</Typography>
+                <Button sx={{background: "linear-gradient(135deg, #FFB1BD 0%, #F06277 100%)",borderRadius:"15px", marginTop:"30%", marginLeft:"20px"}}>Show all</Button>
             </Grid>
             {/* first card */}
             <Grid items md={3}>
