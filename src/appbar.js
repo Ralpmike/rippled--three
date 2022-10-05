@@ -66,7 +66,7 @@ function DrawerAppBar(props) {
           >
             MUI
           </Typography>
-          <Box sx={{ display: { sm: 'space-around' }, flexGrow: 1 }}>
+          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff' }}>
                 {item}
