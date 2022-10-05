@@ -107,14 +107,14 @@ const LandingPage = () => {
         </Stack>
         <Grid container md={12} sx={{marginTop:"30px"}}>
             <Grid items md={3} sx={{fontFamily:"Jacques Pro", fontSize:"20px", lineHeight:"28px", color:"gray"}}>
-                <h2 style={{marginLeft:"200px"}}>All SDGS</h2>
+                <h2 style={{marginLeft:"100px"}}>All SDGS</h2>
                 <Typography sx={{marginLeft:"30px"}}>No Poverty</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"200px"}}>Zero Hunger</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"200px"}}>Good health & well-being</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"200px"}}>Quality Education</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"200px"}}>Genger Equality</Typography>
-                <Typography sx={{marginTop:"30px", marginLeft:"200px"}}>Affordable & clean energy</Typography>
-                <Button sx={{background: "linear-gradient(135deg, #FFB1BD 0%, #F06277 100%)",borderRadius:"15px", marginTop:"200%", marginLeft:"30px"}}>Show all</Button>
+                <Typography sx={{marginTop:"30px", marginLeft:"100px"}}>Zero Hunger</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"100px"}}>Good health & well-being</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"100px"}}>Quality Education</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"100px"}}>Genger Equality</Typography>
+                <Typography sx={{marginTop:"30px", marginLeft:"100px"}}>Affordable & clean energy</Typography>
+                <Button sx={{background: "linear-gradient(135deg, #FFB1BD 0%, #F06277 100%)",borderRadius:"15px", marginTop:"200%", marginLeft:"100px"}}>Show all</Button>
             </Grid>
             {/* first card */}
             <Grid items md={3}>
