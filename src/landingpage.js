@@ -107,14 +107,14 @@ const LandingPage = () => {
         </Stack>
         <Grid container md={12} sx={{marginTop:"30px"}}>
             <Grid items md={3} sx={{fontFamily:"Jacques Pro", fontSize:"20px", lineHeight:"28px", color:"gray"}}>
-                <h2 style={{marginLeft:"100px"}}>All SDGS</h2>
+                <h2 style={{marginLeft:"80px"}}>All SDGS</h2>
                 <Typography sx={{marginLeft:"80px"}}>No Poverty</Typography>
                 <Typography sx={{marginTop:"30px", marginLeft:"80px"}}>Zero Hunger</Typography>
                 <Typography sx={{marginTop:"30px", marginLeft:"80px"}}>Good health & well-being</Typography>
                 <Typography sx={{marginTop:"30px", marginLeft:"80px"}}>Quality Education</Typography>
                 <Typography sx={{marginTop:"30px", marginLeft:"80px"}}>Genger Equality</Typography>
                 <Typography sx={{marginTop:"30px", marginLeft:"80px"}}>Affordable & clean energy</Typography>
-                <Button sx={{background: "linear-gradient(135deg, #FFB1BD 0%, #F06277 100%)",borderRadius:"15px", marginLeft:"80px", marginTop:{xs:"20px"}}}>Show all</Button>
+                <Button sx={{background: "linear-gradient(135deg, #FFB1BD 0%, #F06277 100%)",borderRadius:"15px", marginLeft:"80px", marginTop:{xs:"20px", md:"0px",}}}>Show all</Button>
             </Grid>
             {/* first card */}
             <Grid items md={3}>
