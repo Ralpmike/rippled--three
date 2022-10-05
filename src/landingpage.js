@@ -1,5 +1,5 @@
 import { Stack, Box, Button, Typography, Grid, Card } from "@mui/material";
-import logo from './images/logo.png';
+// import logo from './images/logo.png';
 import boys from './images/boys.png';
 import Divider from '@mui/material/Divider';
 import Video from './images/Video.png';
@@ -10,7 +10,7 @@ import group from './images/group.png';
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 import thumb from './images/thumb.png';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 import aboy from './images/aboy.png';
 import DrawerAppBar from './appbar';
 
