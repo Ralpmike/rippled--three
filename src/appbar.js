@@ -13,6 +13,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import logo from './images/logo.png';
+import {Stack}from '@mui/material';
+import {Link} from "react-router-dom";
+
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Curriculum', 'Projects', 'FAQs'];
@@ -27,10 +31,10 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      {/* <Typography variant="h6" sx={{ my: 2 }}>
         MUI
       </Typography>
-      <Divider />
+      <Divider /> */}
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
@@ -46,9 +50,9 @@ function DrawerAppBar(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box >
       <AppBar component="nav">
-        <Toolbar>
+        <Toolbar sx={{display: 'flex', flexDirection:"row", justifyContent:"space-between"}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -57,21 +61,30 @@ function DrawerAppBar(props) {
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
             <MenuIcon />
+            <Box sx={{textAlign:"center", marginLeft:"140px"}}>
+            <img src={logo} alt="" width={80} />
+            </Box>
           </IconButton>
+          <Box sx={{ mx: 5, display: { xs: 'none', sm: 'flex' } }}>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{  display: { xs: 'none', sm: 'block' } }}
             // sx={{display:"flex", flexDirection:"row", justifyContent:"space-around"}}
           >
-            MUI
+                    <img src={logo} alt="" width={80} />
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Stack direction="row" spacing={{xs:"17px", sm:"28px", md:"39px"}}>
+
             {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff' }}>
                 {item}
               </Button>
             ))}
+          </Stack>
+          </Box>
+          <Box pr={{xs:"40px", sm:"64px", md:"90px"}}>
+            <Button color="inherit" > <Link to="/loginpage"> Login </Link></Button>
           </Box>
         </Toolbar>
       </AppBar>
@@ -94,8 +107,7 @@ function DrawerAppBar(props) {
       </Box>
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
-        <Typography>
-        </Typography>
+        
       </Box>
     </Box>
   );
