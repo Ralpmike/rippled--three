@@ -3,11 +3,11 @@ import InputAdornment from '@mui/material/InputAdornment';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import EmailIcon from '@mui/icons-material/Email';
 import LockPersonIcon from '@mui/icons-material/LockPerson';
-import logo from './images/logo.png';
-import girl from './images/girl.png';
-import google from './images/google.png';
+import logo from '../images/logo.png';
+import girl from '../images/girl.png';
+import google from '../images/google.png';
 import BoltIcon from '@mui/icons-material/Bolt';
-import SelectSmall from './select';
+import SelectSmall from '../selectoption/select';
 import {Link} from "react-router-dom";
 
 

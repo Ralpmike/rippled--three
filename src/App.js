@@ -1,9 +1,10 @@
 import React from "react";
-import LandingPage from "./landingpage";
-import SignUpPage from "./signup";
-import SignInPage from "./loginpage";
-import ForGotPwd from './forgotpwd';
-import SentACode from "./sentacode";
+import './rippled.css';
+import LandingPage from "./pages/landingpage";
+import SignUpPage from "./pages/signup";
+import SignInPage from "./pages/loginpage";
+import ForGotPwd from './pages/forgotpwd';
+import SentACode from "./pages/sentacode";
 import{ BrowserRouter, Routes, Route } from 'react-router-dom'; 
 function App() {
   return (

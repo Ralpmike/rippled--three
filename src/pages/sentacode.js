@@ -2,8 +2,8 @@ import React from "react";
 import { Grid, Stack, Typography, TextField, Button, Box} from "@mui/material";
 import InputAdornment from '@mui/material/InputAdornment';
 import { Link } from 'react-router-dom'
-import logo from './images/logo.png';
-import books from './images/books.png';
+import logo from '../images/logo.png';
+import books from '../images/books.png';
 import EditNotificationsIcon from '@mui/icons-material/EditNotifications';
 
 const SentACode = () => {

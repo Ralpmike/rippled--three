@@ -3,8 +3,8 @@ import { Grid, Stack, Typography, TextField, Button, Box} from "@mui/material";
 import {Link} from "react-router-dom";
 import InputAdornment from '@mui/material/InputAdornment';
 import EmailIcon from '@mui/icons-material/Email';
-import logo from './images/logo.png';
-import books from './images/books.png';
+import logo from '../images/logo.png';
+import books from '../images/books.png';
 
 const ForGotPwd = () => {
     
