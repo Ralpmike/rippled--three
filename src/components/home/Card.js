@@ -2,7 +2,7 @@ import { Box, Card, Button, Typography,Divider } from "@mui/material";
 import writting from '../../images/writting.png';
 import round from '../../images/round.png';
 import group from '../../images/group.png';
-import { Stack, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 
 let array=[
 {
