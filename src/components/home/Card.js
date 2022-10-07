@@ -72,7 +72,7 @@ export default function HomeCard(props){
             <Box width={269.5}>
             <Box sx={{ display: 'wrap', flexDirection:"row", justifyContent:"space-around", alignItems: 'center', my: 1 }} >
                 <Box >
-            <Chip label={item.label}  sx={{background: "linear-gradient(#6E7A87 0%, #6E7A87 95%)", color:"#6E7A87", fontSize:"Poppins", color:"#2A569F"  }}  ><img src={round} alt="" /></Chip>
+            <Chip label={item.label}  sx={{background: "linear-gradient(#6E7A87 0%, #6E7A87 95%)", color:"#6E7A87", fontSize:"Poppins"  }}  ><img src={round} alt="" /></Chip>
                 </Box>
             <Typography sx={{color:"#2A569F"}}> <small>{item.date}</small></Typography>
             </Box>
