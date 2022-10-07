@@ -2,12 +2,12 @@ import { Box, Card, Button, Typography,Divider } from "@mui/material";
 import writting from '../../images/writting.png';
 import round from '../../images/round.png';
 import group from '../../images/group.png';
-import { Grid } from "@mui/material";
+import { Grid, Chip } from "@mui/material";
 
 let array=[
 {
 img: writting,
-title: "No poverty",
+label: "No poverty",
 date: "30th June, 2022",
 content: "Masters In English | How To English | How Toiik Become A Good English Speaker how to inno Become A Good English Speaker how towklljk Become A Good English Speaker how to",
 figure: "223",
@@ -16,15 +16,15 @@ view: "View"
 
 {
     img: writting,
-    title: "Zero Hunger",
+    label: "Zero Hunger",
     date: "30th June, 2022",
     content: "Masters In English | How To English | How Toiik Become A Good English Speaker how to inno Become A Good English Speaker how towklljk Become A Good English Speaker how to",
-    figure: "",
+    figure: "223",
     view: "View"
 },
 {
 img: writting,
-title: "Good health & well-being",
+label: "Good health & well-being",
 date: "30th June, 2022",
 content: "Masters In English | How To English | How Toiik Become A Good English Speaker how to inno Become A Good English Speaker how towklljk Become A Good English Speaker how to",
 figure: "223",
@@ -32,7 +32,7 @@ view: "View"
 },
 {
     img: writting,
-    title: "Quality Education",
+    label: "Quality Education",
     date: "30th June, 2022",
     content: "Masters In English | How To English | How Toiik Become A Good English Speaker how to inno Become A Good English Speaker how towklljk Become A Good English Speaker how to",
     figure: "223",
@@ -40,7 +40,7 @@ view: "View"
     },
     {
         img: writting,
-        title: "Gender Equality",
+        label: "Gender Equality",
         date: "30th June, 2022",
         content: "Masters In English | How To English | How Toiik Become A Good English Speaker how to inno Become A Good English Speaker how towklljk Become A Good English Speaker how to",
         figure: "223",
@@ -48,7 +48,7 @@ view: "View"
         },
         {
             img: writting,
-            title: "Afforadable & clean energy",
+            label: "Afforadable & clean energy",
             date: "30th June, 2022",
             content: "Masters In English | How To English | How Toiik Become A Good English Speaker how to inno Become A Good English Speaker how towklljk Become A Good English Speaker how to",
             figure: "223",
@@ -70,9 +70,9 @@ export default function HomeCard(props){
             <img src={item.img} alt="" width="100%" />
             </Box>
             <Box width={269.5}>
-            <Box sx={{ display: 'flex', flexDirection:"row", justifyContent:"space-around", alignItems: 'center', my: 1 }}>
-                <Box width="30" height="10">
-            <Button  sx={{background: "linear-gradient(#2A569F 0%, #2A569F 95%)", color:"#6E7A87", fontSize:"Poppins"  }}  > <img src={round} alt="" /> <small>{item.title}</small></Button>
+            <Box sx={{ display: 'wrap', flexDirection:"row", justifyContent:"space-around", alignItems: 'center', my: 1 }} >
+                <Box >
+            <Chip label={item.label}  sx={{background: "linear-gradient(#6E7A87 0%, #6E7A87 95%)", color:"#6E7A87", fontSize:"Poppins", color:"#2A569F"  }}  ><img src={round} alt="" /></Chip>
                 </Box>
             <Typography sx={{color:"#2A569F"}}> <small>{item.date}</small></Typography>
             </Box>

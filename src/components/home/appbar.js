@@ -60,7 +60,7 @@ function DrawerAppBar(props) {
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
             <MenuIcon />
-            <Box sx={{textAlign:"center", marginLeft:"140px"}}>
+            <Box sx={{textAlign:"center", marginLeft:"90px"}}>
             <img src={logo} alt="" width={80} />
             </Box>
           </IconButton>

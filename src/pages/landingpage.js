@@ -3,6 +3,7 @@ import boys from '../images/boys.png';
 import Divider from '@mui/material/Divider';
 import Video from '../images/Video.png';
 import reading from '../images/reading.png';
+import footer from '../images/footer.png';
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 import thumb from '../images/thumb.png';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
@@ -46,15 +47,13 @@ const LandingPage = () => {
                 <Typography sx={{fontSize:"40px", fontFamily:"Jacques Pro"}}>200</Typography>
                 <Typography sx={{fontFamily:"Jacques Pro", fontSize:"13px"}}>Students</Typography>
             </Grid>
-            <Divider orientation="vertical" flexItem  sx={{background:"white", height:"15vh", width:"2px", marginTop:"30px"}}/>
+            <Divider orientation="vertical" flexItem  sx={{background:"white", height:"15vh", width:"2px", marginTop:"30px"}} />
             <Grid items md={3} sx={{marginTop:"30px"}} m={2}>
-                {/* <h1></h1> */}
                 <Typography sx={{fontSize:"40px", fontFamily:"Jacques Pro"}}>50</Typography>
                 <Typography sx={{fontFamily:"Jacques Pro", fontSize:"13px"}}>Projects</Typography>
             </Grid>
             <Divider orientation="vertical" flexItem  sx={{background:"white", height:"15vh", width:"2px", marginTop:"30px"}}/>
             <Grid items md={3} sx={{marginTop:"30px"}} m={2}>
-                {/* <h1></h1> */}
                 <Typography sx={{fontSize:"40px", fontFamily:"Jacques Pro"}}>$5k</Typography>
                 <Typography sx={{fontFamily:"Jacques Pro", fontSize:"13px"}}>Raised</Typography>
             </Grid>
@@ -79,7 +78,7 @@ const LandingPage = () => {
             them learn and accelerate their activities
             and become global change makers.</Typography>
             <Button sx={{background: "linear-gradient(274.01deg, #F06277 8.9%, #FFB1BD 126.7%)",
-                borderRadius: "50px", marginTop:"20px"}}>Join Our Community</Button>
+                borderRadius: "50px", marginTop:"30px"}}>Join Our Community</Button>
             </Grid>
         </Grid>
 
@@ -121,9 +120,9 @@ const LandingPage = () => {
                 <Typography>Our students are reaching communities
                     with their solutions and we need your
                     help to enable them scale their impact.</Typography>
-                    <Box sx={{display: 'flex', flexDirection:{md:"row", xs:"column"}, justifyContent:"space-around", marginTop:{xs:"10px", md:"0px", alignItems:{xs:"center"}}}}>
+                    <Box sx={{display: 'flex', flexDirection:{md:"row", xs:"column"}, justifyContent:"space-around", marginTop:{xs:"10px", md:"30px", alignItems:{xs:"center"}}}}>
                     <Button sx={{background: "linear-gradient(146.22deg, #FFB1BD 0%, #F06277 89.44%)", borderRadius:"20px", color:"white" }}> Sponsor <TrendingFlatIcon /> </Button>
-                    <Typography sx={{alignItems:{xs:"center"}, marginLeft:{xs:"70px"}}}>Or</Typography>
+                    <Typography sx={{alignItems:{xs:"center"}, marginLeft:{xs:"70px", md:"0px"}}}>Or</Typography>
                     <Button sx={{background: "linear-gradient(146.22deg, #FFB1BD 0%, #F06277 89.44%)", borderRadius:"20px", color:"white" }}> Sponsor <TrendingFlatIcon /> </Button>
                     </Box>
                     </Box>
@@ -154,16 +153,17 @@ const LandingPage = () => {
                     </Grid>
             </Grid>
         </Box>
-        <Grid container md={12} >
+        <Grid container md={12} alignItems='center' >
             <Grid items md={6}>
             <img src={Groupy} alt="" width="100%" />
             </Grid>
 
-            <Grid items md={6} sx={{marginTop:"20px"}}>
-                <Box >
-                    <Typography m={4} sx={{fontSize:"32px", fontFamily:"Jacques Pro", fontWeight:"600", textAlign:"center"}}>Get In Touch With Us</Typography>
-                </Box>
-                <Stack direction="row"  m={4} spacing={4} sx={{flexDirection:{md:"row", xs:"column"}}}>
+            <Grid items md={6} xs={12} sx={{marginTop:"20px"}}>
+          
+                    <Typography  sx={{fontSize:"32px", fontFamily:"Jacques Pro", fontWeight:"600", textAlign:"center"}}>Get In Touch With Us</Typography>
+               {/* <Stack> */}
+
+                <Stack direction="row"  spacing={3} alignItems='center' sx={{flexDirection:{md:"row", xs:"column"},marginTop:"30px"}}>
                 <Box component="form" >
                 <Typography >Name</Typography>
                 <TextField
@@ -172,7 +172,7 @@ const LandingPage = () => {
                     id="outlined-name"
                     label="Your name" />
                     </Box>
-                    <Box marginTop="30px">
+                    <Box >
                 <Typography>SUBJECT</Typography>
                 <TextField
                     size="small"
@@ -180,7 +180,7 @@ const LandingPage = () => {
                     label="Choose subject" />
                     </Box>
                     </Stack>
-                <Stack direction="row" spacing={5}  m={4} sx={{flexDirection:{md:"row", xs:"column"}}} >
+                <Stack direction='row' spacing={2}  alignItems='center' sx={{flexDirection:{md:"row", xs:"column"}, marginTop:"30px"}} >
                     <Box>
                         <Typography>COMPANY</Typography>
                     <TextField
@@ -189,16 +189,16 @@ const LandingPage = () => {
                         label="Text here"
                     />
                     </Box>
-                    <Box marginTop="30px">
+                    <Box  >
                         <Typography>EMAIL</Typography>
                     <TextField
+                    fullWidth
                         size="small"
                         id="demo-helper-text-misaligned"
                     label="You email address" />
                     </Box>
                 </Stack>
-
-                <Box m={4}>
+                <Box sx={{width:'100%', marginTop:"30px"}}>
                 <Typography>MESSAGE</Typography>
                     <TextField
                     sx={{width:"80%"}}
@@ -210,12 +210,17 @@ const LandingPage = () => {
                     // id="demo-helper-text-misaligned"
                     label="Start typing here" />
                 </Box>
-                    <Button sx={{background: "linear-gradient(277.46deg, #F06277 27.63%, #FFB1BD 108.14%)", borderRadius: "40px", marginLeft:"35px", padding: "10px 45px", gap:"10px", alignItems:"center",}}>Submit</Button>
+               {/* </Stack> */}
+                    <Button sx={{background: "linear-gradient(277.46deg, #F06277 27.63%, #FFB1BD 108.14%)", borderRadius: "40px", marginLeft:"px", padding: "10px 45px", gap:"10px", marginTop:"20px", alignItems:"center",}}>Submit</Button>
+
 
                 
             </Grid>
         </Grid>
-
+        
+        <Box sx={{backgroundColor: "black", height:"50vh"}}>
+            <Typography>fhvgdfuvkhdfov</Typography>
+        </Box>
         </>
     );
 }
