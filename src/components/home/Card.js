@@ -69,23 +69,23 @@ export default function HomeCard(props){
             <Box >
             <img src={item.img} alt="" width="100%" />
             </Box>
-            <Box width={269.5}>
-            <Box sx={{ display: 'wrap', flexDirection:"row", justifyContent:"space-around", alignItems: 'center', my: 1 }} >
+            <Box py={1} px={2}>
+            <Box sx={{ display: 'flex', flexDirection:"row", justifyContent:"space-between", alignItems: 'center', my: 1 }} >
                 <Box >
-            <Chip label={item.label}  sx={{background: "linear-gradient(#6E7A87 0%, #6E7A87 95%)", color:"#6E7A87", fontSize:"Poppins"  }}  ><img src={round} alt="" /></Chip>
+            <Chip label={item.label} size="small"  sx={{background: "rgba(42,59,159,0.05)", color:"", fontSize:"0.7em" ,pr:'8px',borderRadius:'5px' }}  ><img src={round} alt="" /></Chip>
                 </Box>
-            <Typography sx={{color:"#2A569F"}}> <small>{item.date}</small></Typography>
+            <Typography sx={{color:"#2A569F", fontSize:"0.9em" }}> <small>{item.date}</small></Typography>
             </Box>
-            <h5 style={{marginLeft:"10px", marginTop:"10px", color:"gray"}}> <small>{item.content}</small></h5>
+            <h5 style={{marginTop:"10px", color:"gray"}}> <small>{item.content}</small></h5>
             
-            <Divider sx={{fontSize:"1.46px", border: "1.4633px solid #2A569F", background:"#2A569F", width:"90%", textAlign:"center", marginLeft:"20px", marginTop:"10px"}}></Divider>
+            <Divider sx={{fontSize:"1.46px", border: "1.4633px solid #2A569F", background:"#2A569F",  textAlign:"center",  marginTop:"10px"}}></Divider>
             <Box sx={{ display: 'flex', flexDirection:"row", justifyContent:"space-between", alignItems: 'center', marginTop:"10px", marginBottom:"10px"}}>
-            <Box sx={{display: 'flex', flexDirection:"row", marginLeft:"20px"}}>
+            <Box sx={{display: 'flex', flexDirection:"row"}}>
             <img src={group} alt="" />
             <Typography>{item.figure}</Typography>
             </Box>
             <Button sx={{background: "linear-gradient(135deg, #FFB1BD 0%, #F06277 100%)",
-             width:"5%", borderRadius:"20px", marginRight:"10px"}}>{item.view}</Button>
+             width:"5%", borderRadius:"20px", }}>{item.view}</Button>
             </Box>
             </Box>
         </Card>

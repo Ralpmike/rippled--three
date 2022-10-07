@@ -64,7 +64,7 @@ const LandingPage = () => {
             </Grid>
         </Grid>
 
-        <Grid container md={12} width="80%" marginLeft="20px" marginTop="60px" alignItems="center">
+        <Grid container md={12} width="70%" marginLeft="200px" marginTop="60px" alignItems="center">
             <Grid items md={6} sx={{marginTop:"30px"}}>
             <img  src={Video} width={300} height={300} alt="" />
             </Grid>
@@ -130,7 +130,7 @@ const LandingPage = () => {
             {/* </Box> */}
         </Grid>
 
-        <Grid container md={12} sx={{display: 'flex', flexDirection:"row", justifyContent:"space-around", marginTop:"40px", width:"90%"}}>
+        <Grid container md={12} sx={{display: 'flex', flexDirection:"row", justifyContent:"space-around", marginTop:"40px", width:"80%", marginLeft:"160px"}}>
             <Grid items md={6}>
             <img src={thumb} alt="" width={350} />
             </Grid>
