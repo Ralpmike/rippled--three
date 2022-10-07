@@ -18,16 +18,16 @@ const LandingPage = () => {
         <>
             <DrawerAppBar />
             
-        <Grid container md={12}  height="100vh" sx={{background: "linear-gradient(180deg, #FFFFFF 55.8%, #EEF4FF 92.7%, rgba(238, 244, 255, 0.5) 92.7%)", height:{xs:"100%"}
+        <Grid container alignItems='center'  height="100vh" sx={{background: "linear-gradient(180deg, #FFFFFF 55.8%, #EEF4FF 92.7%, rgba(238, 244, 255, 0.5) 92.7%)", height:{xs:"100%"}, flexDirection:{xs:'column-reverse',sm: "column-reverse", md:'row'}, p:{xs:'20px', md:'10px'}
 }} >
             <Grid items md={6}>
-            <Box sx={{width:"75%", marginLeft:"50px"}}>
+            <Box sx={{width:{md:"75%", xs:'100%'}, marginLeft:{md:"50px", xs:'0px'}, }}>
             <h3 style={{color:"gray", fontSize:"40px", fontWeight:"700", lineheight:"50px", fontFamily:"Jacques Pro"}}> <b> Receive the support you need
             to create a ripple effect in
             your school and community. </b></h3>
             <p style={{fontSize:"18px", fontFamily:"Jacques Pro", color:"gray"}}>We empower high school students ages 10 - 18 to
             become innovators and global change agents.</p>
-            <Box sx={{display:"flex", marginTop:"10px", flexDirection:"row", justifyContent:"space-around"}}>
+            <Box sx={{display:{md:"flex", xs:'block'}, marginTop:"10px", flexDirection:"row", justifyContent:"space-around"}}>
             <h4 style={{marginTop:"30px", color:"gray"}}>Want to join our community?</h4> 
             <Button sx={{background: "linear-gradient(274.01deg, #F06277 8.9%, #FFB1BD 126.7%)",
             borderRadius: "50px", border:"1px solid red", width:"45%", height:"8vh", marginTop:"15px"}}>Learn How to work</Button>
@@ -35,7 +35,7 @@ const LandingPage = () => {
             </Box>
         </Grid>
         <Grid items md-6>
-        <Box sx={{marginTop:"80px"}}>
+        <Box sx={{marginTop:""}}>
             <img src={boys} width={300} alt="" />
             </Box>
         </Grid>
@@ -65,7 +65,7 @@ const LandingPage = () => {
             </Grid>
         </Grid>
 
-        <Grid container md={12} width="80%" marginLeft="20px" marginTop="60px" textAlign="center">
+        <Grid container md={12} width="80%" marginLeft="20px" marginTop="60px" alignItems="center">
             <Grid items md={6} sx={{marginTop:"30px"}}>
             <img  src={Video} width={300} height={300} alt="" />
             </Grid>
@@ -99,8 +99,8 @@ const LandingPage = () => {
                 <Typography sx={{marginTop:"30px", marginLeft:"80px"}}>Affordable & clean energy</Typography>
                 <Button sx={{background: "linear-gradient(135deg, #FFB1BD 0%, #F06277 100%)",borderRadius:"15px", marginLeft:"80px", marginTop:"30px"}}>Show all</Button>
             </Grid>
-                <Grid item md={9} >
-                    <Grid  container justifyContent='center' alignItems='center' spacing={1} sx={{background: "#F5F5F5", opacity:""}}>
+                <Grid item md={9} sx={{marginTop:{xs:"20px"}}}>
+                    <Grid  container justifyContent='center' alignItems='center' spacing={2} sx={{background: "#F5F5F5", opacity:""}}>
 
                 <HomeCard />
                     </Grid>
@@ -108,7 +108,7 @@ const LandingPage = () => {
             
         </Grid>
         
-        <Grid container md={12} sx={{backgroundColor:"#2A569F", backgroundRepeat:"no-repeat",display: 'flex', flexDirection:"row", justifyContent:"space-around", marginTop:"20px", color:"white"}}>
+        <Grid container md={12} sx={{backgroundColor:"#2A569F", backgroundRepeat:"no-repeat",display: 'flex', flexDirection:"row", justifyContent:"space-around", marginTop:"20px", color:"white"}} p={4}>
             {/* <Box sx={{marginLeft:"30px"}}> */}
             <Grid items md={6}>
                 <h1 style={{width:"75%", marginTop:"40px", marginLeft:"50px" }}>You Can Become A 
@@ -121,9 +121,9 @@ const LandingPage = () => {
                 <Typography>Our students are reaching communities
                     with their solutions and we need your
                     help to enable them scale their impact.</Typography>
-                    <Box sx={{display: 'flex', flexDirection:"row", justifyContent:"space-around"}}>
+                    <Box sx={{display: 'flex', flexDirection:{md:"row", xs:"column"}, justifyContent:"space-around", marginTop:{xs:"10px", md:"0px", alignItems:{xs:"center"}}}}>
                     <Button sx={{background: "linear-gradient(146.22deg, #FFB1BD 0%, #F06277 89.44%)", borderRadius:"20px", color:"white" }}> Sponsor <TrendingFlatIcon /> </Button>
-                    <Typography>Or</Typography>
+                    <Typography sx={{alignItems:{xs:"center"}, marginLeft:{xs:"70px"}}}>Or</Typography>
                     <Button sx={{background: "linear-gradient(146.22deg, #FFB1BD 0%, #F06277 89.44%)", borderRadius:"20px", color:"white" }}> Sponsor <TrendingFlatIcon /> </Button>
                     </Box>
                     </Box>
@@ -159,11 +159,11 @@ const LandingPage = () => {
             <img src={Groupy} alt="" width="100%" />
             </Grid>
 
-            <Grid items md={6} sx={{marginTop:"20px"}}>
+            <Grid items md={6} sx={{marginTop:"20px", alignItems:"center"}}>
                 <Box >
-                    <Typography m={4} sx={{fontSize:"32px", fontFamily:"Jacques Pro", fontWeight:"600" }}>Get In Touch With Us</Typography>
+                    <Typography m={4} sx={{fontSize:"32px", fontFamily:"Jacques Pro", fontWeight:"600", textAlign:"center"}}>Get In Touch With Us</Typography>
                 </Box>
-                <Stack direction="row" spacing={2} m={4}>
+                <Stack direction="row"  m={4} sx={{flexDirection:{md:'row', xs:'column'}}}>
                 <Box component="form" >
                 <Typography >Name</Typography>
                 <TextField
@@ -172,7 +172,7 @@ const LandingPage = () => {
                     id="outlined-name"
                     label="Your name" />
                     </Box>
-                    <Box>
+                    <Box marginTop="30px">
                 <Typography>SUBJECT</Typography>
                 <TextField
                     size="small"
@@ -180,7 +180,7 @@ const LandingPage = () => {
                     label="Choose subject" />
                     </Box>
                     </Stack>
-                <Stack direction="row" spacing={2} m={4}>
+                <Stack direction="row"  m={4} sx={{flexDirection:{md:"row", xs:"column"}}}>
                     <Box>
                         <Typography>COMPANY</Typography>
                     <TextField
@@ -189,7 +189,7 @@ const LandingPage = () => {
                         label="Text here"
                     />
                     </Box>
-                    <Box>
+                    <Box marginTop="30px">
                         <Typography>EMAIL</Typography>
                     <TextField
                         size="small"
