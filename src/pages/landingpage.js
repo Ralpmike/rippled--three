@@ -3,7 +3,7 @@ import boys from '../images/boys.png';
 import Divider from '@mui/material/Divider';
 import Video from '../images/Video.png';
 import reading from '../images/reading.png';
-import footer from '../images/footer.png';
+// import footer from '../images/footer.png';
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 import thumb from '../images/thumb.png';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
