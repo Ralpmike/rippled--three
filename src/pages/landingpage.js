@@ -159,11 +159,11 @@ const LandingPage = () => {
             <img src={Groupy} alt="" width="100%" />
             </Grid>
 
-            <Grid items md={6} sx={{marginTop:"20px", alignItems:"center"}}>
+            <Grid items md={6} sx={{marginTop:"20px", alignItems:"center"}} spacing={4}>
                 <Box >
                     <Typography m={4} sx={{fontSize:"32px", fontFamily:"Jacques Pro", fontWeight:"600", textAlign:"center"}}>Get In Touch With Us</Typography>
                 </Box>
-                <Stack direction="row"  m={4} sx={{flexDirection:{md:'row', xs:'column'}}}>
+                <Stack  m={4} sx={{flexDirection:{md:'row', xs:'column'}}}>
                 <Box component="form" >
                 <Typography >Name</Typography>
                 <TextField
